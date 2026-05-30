@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Camil Ecommerce Store API is running");
+  res.status(200).send("Camil Ecommerce Store API is running");
 });
 
 app.use("/api/products", productRoutes);
